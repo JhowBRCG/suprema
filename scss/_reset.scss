@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.6rem;
+  background: $bg-color;
+  color: $secondary-color;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 4rem 0 4rem;
+  position: relative;
+}
+
+button {
+  display: block;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}

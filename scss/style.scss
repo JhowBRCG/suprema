@@ -1,0 +1,22 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "header";
+@import "hero";
+@import "vantages";
+@import "services";
+@import "reviews";
+@import "about";
+@import "footer";
+@import "responsive";
+
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+@include medium-devices {
+  .container {
+    width: $mobile-width;
+  }
+}

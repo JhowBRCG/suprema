@@ -1,0 +1,49 @@
+.hero {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  &__left {
+    display: grid;
+    gap: 5.5rem;
+    h1 {
+      font-size: 4rem;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 800;
+      line-height: 6rem;
+      text-transform: uppercase;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      font-family: "Public Sans", sans-serif;
+      color: $primary-color-opacity;
+      text-transform: uppercase;
+    }
+
+    a {
+      @include main-button;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.1rem;
+    margin-top: 5rem;
+    i {
+      padding: 1rem;
+      background: $primary-color;
+      color: $dark-color;
+      font-size: 2rem;
+      transition: all 200ms ease;
+
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+}

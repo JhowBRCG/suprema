@@ -1,0 +1,54 @@
+.reviews {
+  padding-top: 20rem;
+  h3 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  p {
+    width: 40%;
+    margin-top: 1rem;
+    color: $opacity-color;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 13rem;
+    .card-review {
+      border: 1px solid $primary-color;
+      width: fit-content;
+      padding: 3.8rem 3.3rem;
+      min-height: 370px;
+
+      &:nth-child(2) {
+        transform: translateY(-5rem);
+      }
+      &__image {
+        margin-bottom: 4rem;
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+          width: 6.8rem;
+          height: 6.8rem;
+          border: 0.3rem solid $primary-color;
+        }
+      }
+
+      h4 {
+        font-weight: 700;
+      }
+
+      small {
+        font-size: 1.3rem;
+        color: $opacity-color;
+        text-transform: uppercase;
+      }
+
+      p {
+        width: fit-content;
+      }
+    }
+  }
+}
