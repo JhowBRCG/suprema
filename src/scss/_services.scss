@@ -12,7 +12,8 @@
   }
 
   .services__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     position: relative;
 
@@ -26,7 +27,7 @@
       padding: 3rem 1rem;
       border: 0.1rem solid $green-color;
       border-radius: 5rem;
-      width: 500px;
+      // width: 500px;
 
       .service__img {
         width: 10rem;
@@ -75,6 +76,38 @@
       }
 
       &:nth-child(3) {
+        border: 1px solid $yellow-color;
+
+        h4 {
+          color: $yellow-color;
+        }
+
+        a {
+          background: linear-gradient(
+            45deg,
+            $yellow-color,
+            rgba($yellow-color, 0.4)
+          );
+        }
+      }
+
+      &:nth-child(5) {
+        border: 1px solid $blue-color;
+
+        h4 {
+          color: $blue-color;
+        }
+
+        a {
+          background: linear-gradient(
+            45deg,
+            $blue-color,
+            rgba($blue-color, 0.4)
+          );
+        }
+      }
+
+      &:nth-child(6) {
         border: 1px solid $yellow-color;
 
         h4 {

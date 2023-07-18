@@ -44,8 +44,8 @@
       width: 70%;
     }
 
-    &__cards {
-      flex-direction: column;
+    .services__cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
       align-items: center;
     }
   }
@@ -95,8 +95,8 @@
   }
 
   .vantages {
-    h2 {
-    }
+    // h2 {
+    // }
 
     p {
       font-size: 1.6rem;
@@ -109,6 +109,19 @@
       .service__card {
         width: auto;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .services {
+    p {
+      width: 70%;
+    }
+
+    .services__cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+      align-items: center;
     }
   }
 }
